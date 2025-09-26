@@ -87,7 +87,7 @@ if __name__ == "__main__":
     df = prep_store_data(df)
     df.rename(columns={'Date': 'ds', 'Sales': 'y'}, inplace=True)
 
-    train_index = int(0.8 * df.shape[0])
+    train_index = int(0.75 * df.shape[0])
     train_predict(
         df_all_data=df,
         df_all_train_index=train_index,
